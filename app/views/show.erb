@@ -1,0 +1,31 @@
+<h1> <%="#{@project.name} Info"%> </h1>
+
+<ul>
+  <li><%= "Title: #{@project.name}"%></li>
+  <li><%= "Description: #{@project.description}"%></li>
+</ul>
+
+<h3> Team Members: </h3>
+<ul>
+  <% @users.each do |user| %>
+    <li><%= "First Name: #{User.find_by(id: user.user_id).first_name}"%><br>
+        <%= "Last Name: #{User.find_by(id: user.user_id).last_name}"%><br>
+    <% email = User.find_by(id: user.user_id).email %>
+    <% unless email.nil? %>
+      <%= "Email: #{email}"%><br>
+    <% end %>
+    <br>
+    </li>
+  <% end %>
+</ul>
+
+<h3> Tasks: </h3>
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= "Task Name: #{task.name}"%><br>
+        <%= "Assignee First Name: #{User.find_by(id: task.user_id).first_name}"%><br>
+        <%= "Assignee Last Name: #{User.find_by(id: task.user_id).last_name}"%><br>
+    <br>
+    </li>
+  <% end %>
+</ul>
