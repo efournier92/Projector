@@ -4,28 +4,27 @@ This is an app I built in Sinatra. It is meant to help teams manage projects via
 
 ##Models
 ##### Users
-* Inititalized With:
+* Initialized With:
 	* First Name 
 	* Last Name
-	* Email (Optional)
-* Users can belong to multiple projects
+	* Email (*Optional*)
+* *Users can belong to multiple projects*
 
 ##### Projects
 * Initialized With:
 	* Name
-	* Descrption (Optional)
-* A project can have many users assigned to it.
+	* Description (Optional)
+* *A project can have many users assigned to it.*
 
-
-#### Tasks
+##### Tasks
 	* Initialized With:
 		* Name
 		* Description (Optional)
 		* Due Date
-	* Tasks can be assigned to a single user, or remain unassigned
-	* A task must belong to a single project.
+	* *Tasks can be assigned to a single user, or remain unassigned.*
+	* *A task must belong to a single project.*
 
-### `seeds.rb`
+##### `seeds.rb`
 	* Contains code to create three users and two projects.
 
 ### Select User Stories
