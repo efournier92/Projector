@@ -17,15 +17,15 @@ This is an app I built in Sinatra. It is meant to help teams manage projects via
 * *A project can have many users assigned to it.*
 
 ##### Tasks
-	* Initialized With:
-		* Name
-		* Description (Optional)
-		* Due Date
-	* *Tasks can be assigned to a single user, or remain unassigned.*
-	* *A task must belong to a single project.*
+* Initialized With:
+	* Name
+	* Description (Optional)
+	* Due Date
+* *Tasks can be assigned to a single user, or remain unassigned.*
+* *A task must belong to a single project.*
 
 ##### `seeds.rb`
-	* Contains code to create three users and two projects.
+* Contains code to create three users and two projects.
 
 ### Select User Stories
 
@@ -59,5 +59,5 @@ As a user
 I want to see the tasks of each project
 So I know what needs to completed in the project
 ```
-Acceptance Criteria:
+* Acceptance Criteria:
 	* The name of each task, as well as the first and last name of the user assigned to it, is visible on the project show page. 
